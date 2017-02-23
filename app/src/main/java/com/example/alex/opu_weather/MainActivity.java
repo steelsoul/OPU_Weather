@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_share:
                 Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
+                i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_SUBJECT, "Weather forecast");
                 i.putExtra(Intent.EXTRA_TEXT, "Hello, below the weather forecast for the week");
                 startActivity(i);
